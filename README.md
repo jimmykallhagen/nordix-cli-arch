@@ -1,7 +1,8 @@
 # Nordix CLI tools for managing an arch linux system from maintenance to troubleshooting
 
 ```Fish
-'\033[38;2;80;200;255m'
+NGLACIER='\033[38;2;80;200;255m'
+echo "$NGLACIER"
 
     ____  _____ ________ ________  __________ __________ _____  ______
     |   \ |   |/   ___  \|  ___   \|   ___  \ \__    __/ \   \  /   /
