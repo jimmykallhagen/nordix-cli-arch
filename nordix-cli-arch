@@ -4047,14 +4047,14 @@ missing_components_check() {
     cpu_vendor=$(grep -m1 "vendor_id" /proc/cpuinfo | cut -d':' -f2 | xargs)
     if [[ "$cpu_vendor" == *"Intel"* ]]; then
         if pacman -Qi intel-ucode &>/dev/null; then
-            echo -e "  ${GREEN}$OK{NC} intel-ucode installed"
+            echo -e "  ${GREEN}OK{NC} intel-ucode installed"
         else
             echo -e "  ${RED}x${NC} intel-ucode ${RED}MISSING - SECURITY RISK${NC}"
             echo -e "      ${NARTIC} sudo pacman -S intel-ucode${NC}"
         fi
     elif [[ "$cpu_vendor" == *"AMD"* ]]; then
         if pacman -Qi amd-ucode &>/dev/null; then
-            echo -e "  ${GREEN}$OK{NC} amd-ucode installed"
+            echo -e "  ${GREEN}OK{NC} amd-ucode installed"
         else
             echo -e "  ${RED}$x{NC} amd-ucode ${RED}MISSING - SECURITY RISK${NC}"
             echo -e "      ${NARTIC} sudo pacman -S amd-ucode${NC}"
