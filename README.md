@@ -1,8 +1,8 @@
 # Nordix CLI tools for managing an arch linux system from maintenance to troubleshooting
 
 ```Fish
-NGLACIER='\033[38;2;80;200;255m'
-echo "$NGLACIER"
+NARTIC='\033[38;2;156;230;255m'
+echo -e "$NARTIC
 
     ____  _____ ________ ________  __________ __________ _____  ______
     |   \ |   |/   ___  \|  ___   \|   ___  \ \__    __/ \   \  /   /
@@ -53,6 +53,7 @@ Choose option (0-18):
 
 Enter your choice (0-18):
 ❯
+"
 ```
 
 
